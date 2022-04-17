@@ -1,0 +1,362 @@
+@import "null.css";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+
+/* ============================== */
+.wrapper {
+	min-height: 100%;
+	/* overflow: hidden; */
+}
+/* ============================== */
+
+
+body{
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+}
+
+.truck {
+	position: relative;
+	perspective: 400px;
+
+	width: 1000px;
+	height: 500px;
+	margin: 0 auto;
+	margin-top: 100px;
+	
+	/* border: black solid 2px; */
+}
+
+.truck__wheel{
+	position: absolute;
+
+	background-color: rgb(48, 46, 46);
+	width: 130px;
+	height: 130px;
+	border-radius: 50%;
+}
+
+.wheel-truck__light{
+	width: 116px;
+	height: 116px;
+	border: 7px solid rgb(132, 132, 132);
+	border-radius: 50%;
+	border-bottom-color: transparent;
+	border-right-color: transparent;
+	transform: rotate(80deg);
+}
+
+.wheel-truck_left{
+	left: 100px;
+	bottom: 0;
+}
+
+.wheel-truck_central{
+	left: 280px;
+	bottom: 0;
+}
+
+.wheel-truck_right{
+	left: 780px;
+	bottom: 0;
+}
+
+.wheel-truck__disk{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -40px;
+	margin-top: -40px;
+
+	background-color: rgb(170, 170, 170);
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+}
+
+.wheel-truck__sub-disk{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -20px;
+	margin-top: -20px;
+
+	background-color: rgb(213, 213, 213);
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+}
+
+.truck__sub-wheel {
+	position: absolute;
+	/* top: 50%;
+	left: 50%;
+	margin-left: -80px;
+	margin-top: -80px; */
+	
+	width: 160px;
+	height: 80px;
+	border-radius: 50% 50% 0 0 / 100% 100% 0 0;
+	background-color: rgb(69, 0, 84);
+}
+
+.sub-wheel-truck_left{
+	left: 85px;
+	bottom: 65px;
+}
+.sub-wheel-truck_central{
+	left: 265px;
+	bottom: 65px;
+}
+.sub-wheel-truck_right{
+	left: 765px;
+	bottom: 65px;
+}
+
+.truck__pre-sub-wheel{
+	position: absolute;
+	width: 180px;
+	height: 90px;
+	border-radius: 50% 50% 0 0 / 100% 100% 0 0;
+	background-color: rgb(145, 0, 178);
+}
+
+.pre-sub-wheel-truck_left{
+	left: 75px;
+	bottom: 65px;
+}
+.pre-sub-wheel-truck_central{
+	left: 255px;
+	bottom: 65px;
+}
+.pre-sub-wheel-truck_right{
+	left: 755px;
+	bottom: 65px;
+}
+
+.truck__lower-body{
+	position: absolute;
+	width: 893px;
+	height: 60px;
+	background-color: rgb(182, 0, 223);
+	bottom: 65px;
+	left: 50px;
+	border-bottom-left-radius: 20px;
+	
+}
+
+.truck__lower-body-shadow{
+	position: absolute;
+	width: 893px;
+	height: 30px;
+	background-color: rgba(0, 0, 0, 0.3);
+	bottom: 65px;
+	left: 50px;
+	border-bottom-left-radius: 20px;
+}
+
+.truck__radiator {
+	position: absolute;
+	width: 70px;
+	height: 150px;
+	background-color: rgb(234, 234, 234);
+	bottom: 65px;
+	left: 900px;
+
+	border-top-right-radius: 200% 300%;
+	border-bottom-right-radius: 30px;
+}
+.truck__sub-radiator {
+	position: absolute;
+	width: 70px;
+	height: 150px;
+	background-color: rgb(197, 197, 197);
+	bottom: 65px;
+	left: 895px;
+
+	border-top-right-radius: 200% 300%;
+	border-bottom-right-radius: 30px;
+}
+
+.truck__hood {
+	position: absolute;
+	width: 200px;
+	height: 200px;
+	border-radius: 0% 100% 11% 89% / 100% 39% 61% 0% ;
+	background-color: rgb(168, 0, 205);
+
+	bottom: 65px;
+	left: 763px;
+}
+
+.truck__front-light-1 {
+	position: absolute;
+	width: 30px;
+	height: 60px;
+	border-radius: 50%;
+	background-color: rgb(197, 197, 197);
+	bottom: 130px;
+	left: 928px;
+
+	transform: rotate(14deg);
+}
+.truck__front-light-2 {
+	position: absolute;
+	width: 26px;
+	height: 50px;
+	border-radius: 50%;
+	background-color: rgb(69, 0, 84);
+	bottom: 133px;
+	left: 930px;
+
+	transform: rotate(14deg);
+}
+.truck__front-light-3 {
+	position: absolute;
+	width: 25px;
+	height: 45px;
+	border-radius: 50%;
+	background-color: rgb(227, 227, 227);
+	bottom: 133px;
+	left: 930px;
+
+	transform: rotate(10deg);
+}
+
+.truck__cabin {
+	position: absolute;
+	width: 305px;
+	height: 310px;
+	background-color: rgb(168, 0, 205);
+	border-top-right-radius: 20px;
+	bottom: 95px;
+	left: 480px;
+}
+
+.truck__top-cabin {
+	position: absolute;
+	width: 250px;
+	height: 60px;
+	background-color: rgb(168, 0, 205);
+	border-radius: 34% 66% 100% 0% / 0% 100% 0% 100% ;
+	border-top-left-radius: 20px;
+	bottom: 385px;
+	left: 480px;
+}
+
+.truck__front-glass {
+	position: absolute;
+	height: 0; 
+	width: 150px;
+	border-bottom: 150px solid #4ecdff;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	bottom: 240px;
+	left: 581px;
+
+	transform: rotateY(-35deg);
+	transform: rotateX(-3deg);
+}
+
+.truck__platka-1 {
+	position: absolute;
+	background-color: rgb(168, 0, 205);
+	width: 200px;
+	height: 50px;
+	left: 563px;
+	bottom: 215px;
+
+}
+.truck__platka-2 {
+	position: absolute;
+	background-color: rgb(168, 0, 205);
+	width: 50px;
+	height: 200px;
+	left: 582px;
+	bottom: 215px;
+}
+.truck__platka-3 {
+	position: absolute;
+	background-color: rgb(168, 0, 205);
+	width: 20px;
+	height: 160px;
+	bottom: 240px;
+	left: 740px;
+	transform: rotate(-10deg);
+}
+
+.truck__glass {
+	position: absolute;
+	background-color: #4ecdff;
+	width: 105px;
+	height: 50px;
+	border-radius: 20px;
+	border: black solid 2px;
+	bottom: 335px;
+	left: 493px;
+}
+
+.truck__line-1 {
+	position: absolute;
+	width: 750px;
+	border: black solid 1px;
+	bottom: 80px;
+	left: 50px;
+}
+.truck__line-2 {
+	position: absolute;
+	width: 165px;
+	border: black solid 1px;
+	background-color: #000;
+	bottom: 390px;
+	left: 617px;
+}
+
+.truck__line-3 {
+	position: absolute;
+	height: 310px;
+	border: black solid 1px;
+	background-color: #000;
+	bottom: 80px;
+	left: 617px;
+}
+
+.truck__line-4 {
+	position: absolute;
+	height: 150px;
+	border: black solid 1px;
+	background-color: #000;
+	bottom: 240px;
+	left: 755px;
+	transform: rotate(-10deg);
+}
+
+.truck__line-5 {
+	position: absolute;
+	height: 99px;
+	border: black solid 1px;
+	background-color: #000;
+	bottom: 141px;
+	left: 768px;
+}
+
+.truck__line-6 {
+	position: absolute;
+	height: 65px;
+	border: black solid 1px;
+	background-color: #000;
+	bottom: 78px;
+	left: 756px;
+	transform: rotate(20deg);
+}
+
+.truck__line-7 {
+	position: absolute;
+	height: 190px;
+	border: rgb(28, 28, 28) solid 1px;
+	background-color: rgb(28, 28, 28);
+	bottom: 130px;
+	left: 860px;
+	transform: rotate(-80deg);
+}
+
